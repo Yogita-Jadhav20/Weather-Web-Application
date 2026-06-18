@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,  #2b40ff,#07121a);
+}
+
+.mainContainer {
+  width: 25rem;
+  height: auto;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Search Input Styles */
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem;
+  
+  justify-content: center;
+}
+
+.searchInput input {
+  width: 80%;
+  height: 2.5rem;
+  outline: none;
+  font-size: 1rem;
+  color: #525050;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border: 2px solid #b3b3b3;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.searchInput input:focus {
+  border-color: #2b40ff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.searchInput input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Optional: Add padding around the input and button */
+.searchInput {
+  padding: 1rem;
+  justify-content: center;
+}
+
+
+/* Search Button Styles */
+.searchInput button {
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  background-color: #2b40ff;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput button:hover {
+  background-color: #07121a;
+  transform: scale(1.1);
+}
+
+.searchInput button i {
+  font-size: 1.2rem;
+}
+
+/* Optional: Add some padding for better spacing around the input and button */
+.searchInput {
+  padding: 1rem;
+  justify-content: center;
+}
+
+
+.weatherIcon {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  max-width: 100%;
+  width: 8rem;
+}
+
+.weatherDetails .temp{
+ font-size: 2rem;
+}
+.cityDetails {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  color: #323232;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.windDetails {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+}
+
+.windDetails .humidityBox {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .humidity .humidityValue {
+ text-align: center;
+  font-size: 2rem;
+  color: #323232;
+}
+
+.windDetails .humidityBox img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .windSpeed {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .windSpeed img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+
+.image-logo{
+        height: auto;
+        width: auto;
+        filter: drop-shadow(20px 10px 10px black);
+      }
+      
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+
+
+/* Weather Icon Positioning */
+.weather-icon-container {
+  position: fixed;
+  top: 10px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
+  z-index: 999; /* Ensures the icon stays on top of other content */
+
+}
+
+.weather-icon-container i {
+  font-size: 4rem; /* Adjust the size of the icon */
+}
